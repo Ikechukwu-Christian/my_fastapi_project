@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "flight-booking-api"
+version = "0.1.0"
+description = "Flight Booking API"
+authors = ["Ikechukwu-Christian <christainekwueme23@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+fastapi = "^0.110.1"
+uvicorn = "^0.29.0"
+pydantic = {extras = ["email"], version = "^2.6.4"}
+pytest = "^8.1.1"
+pydantic-extra-types = "^2.6.0"
+phonenumbers = "^8.13.33"
+httpx = {extras = ["cli"], version = "^0.27.0"}
+coverage = "^7.4.4"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
